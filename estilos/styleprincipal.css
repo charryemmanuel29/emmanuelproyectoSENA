@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    padding: 10px;
+    background-color: #509BDC;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    padding: 0 10px;
+}
+
+.hregistro,
+.hinicio {
+    text-align: center;
+    color: #509BDC;
+}
+
+p {
+    padding: 5px 20px;
+}
+
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+   ========================= */
+
+nav {
+    background-color: #B8E8FF;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Cada menú */
+.menu {
+    position: relative;
+}
+
+
+/* Botones principales */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #509BDC;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    transition: transform .3s ease;
+}
+
+
+/* Efecto botones principales */
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   SUBMENÚ
+   ========================= */
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Opciones del submenú */
+.sub_menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 0;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: none;
+}
+
+
+/* Hover del submenú */
+.sub_menu a:hover {
+    background-color: #eeeeee;
+    transform: none;
+}
+
+
+/* Mostrar submenú */
+.sub_menu.activo {
+    display: block;
+}
+
+
+/* =========================
+   FORMULARIOS
+   ========================= */
+
+.contenedor {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #5f9ea0;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.label-icono {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.icono {
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   BOTONES
+   ========================= */
+
+button {
+    background-color: #2f4f4f;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    transition: transform .3s ease;
+}
+
+button:hover {
+    background-color: #4682b4;
+    transform: scale(1.2);
+}
+
+
+/* =========================
+   BOTÓN SALIR
+   ========================= */
+
+#salir {
+    padding: 25px 20px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: #5f9ea0;
+    color: #eeeeee;
+    transition: trasnform .3s ease;
+}
+
+#salir:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #2f4f4f;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+}

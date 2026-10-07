@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <title>Parts Mind AI</title>
+</head>
+<body>
+
+    <header>
+        <h2>Parts Mind AI</h2>
+        <p>Una manera Inteligente</p>
+    </header>
+
+    <nav>
+        <a href="registro.html" class="activo">Registro</a>
+        <a href="Sesion.html">Iniciar Sesión</a>
+    </nav>
+
+    <div class="contenedor">
+        <form id="registro" action="#" method="post">
+
+            <h2 class="hregistro">Registro</h2>
+            
+            <div class="campo">
+                <div class="label-icono">
+                    <label for="usuario">Usuario</label>
+                    <span class="icono" aria-hidden="true"><ion-icon name="person"></ion-icon></span>
+                </div>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+            </div>
+
+            <div class="campo">
+                <div class="label-icono">
+                    <label for="email">Email</label>
+                    <span class="icono" aria-hidden="true"><ion-icon name="mail"></ion-icon></span>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="campo">
+                <div class="label-icono">
+                    <label for="contrasena">Contraseña</label>
+                    <span class="icono" aria-hidden="true"><ion-icon name="lock-closed"></ion-icon></span>
+                </div>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+            </div>
+
+            <button type="submit">Registrarme</button>
+
+        </form>
+    </div>
+
+    <footer>
+        Parts Mind AI - Derechos Reservados©. 2026
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/funcionalidad/funcionalidad.js"></script>
+
+</body>
+</html>

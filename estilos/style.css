@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    padding: 10px;
+    background-color: #509BDC;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    padding: 0 10px;
+}
+
+.hregistro, .hinicio {
+    text-align: center;
+    color: #509BDC;
+}
+
+p {
+    padding: 5px 20px;
+}
+
+nav {
+    background-color: #B8E8FF;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: transform .3s ease;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+.contenedor {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #B8E8FF;
+    color: #509BDC;
+    box-sizing: border-box;
+}
+
+.label-icono {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.icono {
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #509BDC;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    transition: .5s;
+    transition: transform .3s ease;
+}
+
+button:hover {
+    background-color: #4682b4;
+    transform: scale(1.2);
+}
+
+#salir {
+    padding: 25px 20px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: #5f9ea0;
+}
+
+.nav-item {
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* Cada opción principal */
+.menu {
+    position: relative;
+}
+
+
+/* Submenú */
+.barra_principal .sub_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Opciones dentro del submenú */
+.barra_principal .sub_menu a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/* Cuando el menú está activo */
+.barra_principal .sub_menu.activo {
+    display: block;
+}
+
+
+/* Efecto al pasar el mouse */
+.barra_principal .sub_menu a:hover {
+    background-color: #eeeeee;
+}
+
+footer {
+    background-color: #509BDC;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+}

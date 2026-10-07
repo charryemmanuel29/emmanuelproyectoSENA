@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/styleprincipal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Parts Mind AI</title>
+</head>
+<body>
+
+    <header>
+        <h2>Parts Mind AI</h2>
+        <a id="salir" href="Sesion.html">Salir</a>
+    </header>
+    
+    <nav class="barra_principal">
+
+        <div class="menu">
+        
+            <a href="#" class="nav-item" onclick="mostrarMenu('menuAcciones')">
+                <i class="fa-regular fa-bolt"></i>
+                Acciones 
+            </a>
+
+            <div id="menuAcciones" class="sub_menu">
+
+                <a href="/funcionSistema/index.html">Crear Producto</a>
+                <a href="#">Ingresar Proveedor</a>
+                <a href="#">Ingresar Factura</a>
+                <a href="#">Ventas</a>
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+
+            <a href="#" class="nav-item" onclick="mostrarMenu('menuInformes')">
+                <i class="fa-solid fa-file"></i>
+                Informes
+            </a>
+
+            <div id="menuInformes" class="sub_menu">
+
+                <a href="#">Informe de ventas</a>
+                <a href="#">Informe de Stock</a>
+                <a href="#">Informe Proveedores</a>
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+
+            <a href="#" class="nav-item" onclick="mostrarMenu('menuAjustes')">
+                <i class="fa-solid fa-gear"></i>
+                Ajustes
+            </a>
+
+            <div id="menuAjustes" class="sub_menu">
+
+                <a href="#">Modo</a>
+                <a href="#">Usuarios</a>
+                <a href="#">general</a>
+
+            </div>
+
+        </div>   
+
+        <div class="menu">
+
+            <a href="#" class="nav-item" onclick="mostrarMenu('menuAyuda')">
+                <i class="fa-solid fa-circle-question"></i>
+                Ayuda
+            </a>
+
+            <div id="menuAyuda" class="sub_menu">
+
+                <a href="#">¿Como Ingresar Un Producto?</a>
+                <a href="#">¿Como Eliminar Un Producto?</a>
+                <a href="#">¿Como Crear Un Producto?</a>
+                <a href="#">¿Como Crear Un Proveedor?</a>
+                <a href="#">¿Como Generar Un Informe?</a>
+
+            </div>
+
+        </div>    
+
+    </nav>
+
+    <script src="/funcionalidad/funcionalidad.js"></script>
+
+</body>
+</html>
